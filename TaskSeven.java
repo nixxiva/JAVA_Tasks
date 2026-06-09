@@ -1,6 +1,9 @@
 import java.util.Scanner;        
     
+public class TaskSeven{
     public static void main(String[] args) {
+        TaskSeven t = new TaskSeven();
+
         Scanner s = new Scanner(System.in);
         
         System.out.print("Enter 1st number : ");
@@ -12,40 +15,41 @@ import java.util.Scanner;
         System.out.println();
         
         System.out.print(firstNum + " + " + secondNum + " = " );
-        System.out.println(sum(firstNum, secondNum));
+        System.out.println(t.sum(firstNum, secondNum));
         
         System.out.print(firstNum + " - " + secondNum + " = " );
-        System.out.println(difference(firstNum, secondNum));
+        System.out.println(t.difference(firstNum, secondNum));
         
         System.out.print(firstNum + " * " + secondNum + " = " );
-        System.out.println(product(firstNum, secondNum));
+        System.out.println(t.product(firstNum, secondNum));
         
         System.out.print(firstNum + " / " + secondNum + " = " );
-        System.out.println(quotient(firstNum, secondNum));
-        
+        System.out.println(t.quotient(firstNum, secondNum));
+
         s.close();
     }
     
-    public static int sum(int firstNum, int secondNum){
+    public int sum(int firstNum, int secondNum){
 
        return firstNum + secondNum;
 
     }
 
-    public static int difference(int firstNum, int secondNum){
+    public int difference(int firstNum, int secondNum){
 
        return firstNum - secondNum;
 
     }
 
-    public static int product(int firstNum, int secondNum){
+    public int product(int firstNum, int secondNum){
 
        return firstNum * secondNum;
 
     }
 
-    public static int quotient(int firstNum, int secondNum){
+    public double quotient(double firstNum, double secondNum){
 
        return firstNum / secondNum;
 
     }
+}
