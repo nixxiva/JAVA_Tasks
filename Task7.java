@@ -1,8 +1,8 @@
 import java.util.Scanner;        
     
-public class TaskSeven{
+public class Task7{
     public static void main(String[] args) {
-        TaskSeven t = new TaskSeven();
+        Task7 t = new Task7();
 
         Scanner s = new Scanner(System.in);
         
