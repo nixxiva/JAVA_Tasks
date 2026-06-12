@@ -3,16 +3,24 @@ public static void main(String[] args){
 
     Scanner s = new Scanner(System.in);
 
-    int[] arr;
+    List<Integer> arr = new ArrayList<>();
 
-    System.out.println("Enter 1st number : ");
+    System.out.print("Enter 1st number : ");
+    arr.add(s.nextInt());
     
-    System.out.println("Enter 2nd number : ");
-    int two = s.nextInt();
+    System.out.print("Enter 2nd number : ");
+    arr.add(s.nextInt());
 
-    System.out.println("Enter 3rd number : ");
-    int three = s.nextInt();
+    System.out.print("Enter 3rd number : ");
+    arr.add(s.nextInt());
 
-    if
+    System.out.println();
+
+    if (arr.get(0) == arr.get(1) && arr.get(1) == arr.get(2)) {
+        System.out.println("All numbers are equal.");
+    }else {
+        Collections.sort(arr);
+        System.out.println("The largest number is " + arr.get(2));
+    }
 
 }
