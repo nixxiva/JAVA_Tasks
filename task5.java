@@ -23,4 +23,5 @@ public static void main(String[] args){
         System.out.println("The largest number is " + arr.get(2));
     }
 
+    s.close();
 }
