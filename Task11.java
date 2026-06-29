@@ -1,4 +1,5 @@
 public class Task11 {
+
     public static class Book{
         String title;
         String author;
@@ -11,6 +12,15 @@ public class Task11 {
             this.yearPublished = yearPublished;
             this.price = price;
         }
+
+        @Override
+        public String toString(){
+            return  "Title          : " + title + "\n" +
+                    "Author         : " + author + "\n" +
+                    "Year Published : " + yearPublished + "\n" +
+                    "Price          : " + "$" + price; 
+
+        }
     }
 
     public static class testingTheBook{
@@ -18,7 +28,11 @@ public class Task11 {
             Book b1 = new Book("The Untold Story", "Rose Ann Pelagio", 2026, 21_500);
             Book b2 = new Book("Harry Potah", "Rolling Rolls", 1983, 23_350);
             Book b3 = new Book("Desaparesidos", "Lualhati Bautista", 1994, 3000);
-            // (b1.title, b1.author, b1.yearPublished, b1.price).toString());fix this
+            
+            System.out.println("Book 1:" + "\n" + b1.toString() + "\n");
+            System.out.println("Book 2:" + "\n" + b2.toString() + "\n");
+            System.out.println("Book 3:" + "\n" + b3.toString() + "\n");
+
         }
     }
 }
