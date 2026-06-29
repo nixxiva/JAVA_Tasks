@@ -14,7 +14,7 @@ public class Task9{
 
         // MULTIPLY
         System.out.println("MULTIPLICATION:");
-        System.out.println(subtract(34, 35));
+        System.out.println(multiply(34, 35));
 
         // DIVIDE
         System.out.println("DIVISION:");
