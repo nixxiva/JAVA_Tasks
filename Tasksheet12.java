@@ -11,30 +11,19 @@ class Point {
         System.out.println("(" + x + "," + y + ")");
     }
 
-    // Your code goes here
-
-    double getX(){
-        return x;
+    void scale(){
+        x = x / 2; 
+        y = y / 2;
     }
 
-    double getY(){
-        return y;
-    }
-
-    // double scale(double x, double y){
-    //     x = x / 2; 
-    //     y = y / 2;
-
-    //     // return(double x, double y);
-    // }
 }
 
 public class Tasksheet12 {
     public static void main(String[] args) {
-        Point p = new Point(32, 32);
+        Point p = new Point(32,32);
 
         for (int i = 0; i < 5; i++) {
-            // p.scale();
+            p.scale();
             p.print();
         }
     }
